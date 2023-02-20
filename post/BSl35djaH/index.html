@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="https://xuconnery.github.io/favicon.ico" type="image/x-icon" /><meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="apple-mobile-web-app-capable"content="yes"/><meta name="apple-mobile-web-app-status-bar-style"content="black"/><meta name="format-detection"content="telephone=no"/><meta name="renderer"content="webkit"><meta name="description"content="吾日三省吾身"><meta charset="UTF-8"><title>电视盒子CPU、GPU性能对比 | BossXu</title>
+<link href="https://xuconnery.github.io/styles/main.css" type="text/css" rel="stylesheet" /><link href="https://at.alicdn.com/t/font_1621793_zatzzgvf30g.css" type="text/css" rel="stylesheet" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css"><script async src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.min.js"></script><script src="https://xuconnery.github.io/media/js/magnify.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
+<script type="text/javascript">function btn_toggle(){document.getElementById("hn").classList.contains("no-js")?document.getElementById("hn").classList.remove("no-js"):document.getElementById("hn").classList.add("no-js")}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EG9T3BG7R"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-9EG9T3BG7R');
+</script>
+
+<link rel="canonical" href="https://xuconnery.github.io/post/BSl35djaH/" />
+</head>
+<body>
+<div class="progress"></div><style>.progress{background:linear-gradient(to right,#87ceeb var(--scroll),transparent 0);background-repeat:no-repeat;position:fixed;width:100%;height:4px;z-index:1}</style><div class="darkmode-background"></div><div class="darkmode-layer"></div>
+<noscript><p class="warn" >本页面需要浏览器支持（启用）JavaScript</p></noscript><div class="header"><div class="logo_title"><div class="title animated fadeInDown"><a href="https://xuconnery.github.io"><img alt="logo" style="display:inline-block;" src="https://xuconnery.github.io/images/avatar.png"/></a><h1 title="BossXu" class="weaklink"><a  href="/">BossXu</a></h1>
+
+<div class="navbar weaklink">
+<div class="normal_nav">
+<div class="bitcron_nav_container"><div class="bitcron_nav"><div class="bitcron_nav"><div style="display:flex;justify-content:center;"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul></nav>
+<div style="float:right;margin-top:1em"><form id="gridea-search-form" data-update="1578893743252" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="Search..."></form></div><div style="margin-left:0.5em;margin-top:1.2em"><input id="switch_default" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+<div class="clear clear_nav_inline_end"></div></div></div><div class="clear clear_nav_end"></div></div></div><div class="hamberger" href="javascript:void(0)" onclick="btn_toggle();"><i class="iconfont icon-category"></i></div></div></div></div>
+<div id="hn" class="no-js hidden_nav animated fadeInDown"><div class="bitcron_nav_container"><div class="bitcron_nav"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul><div class="clear clear_nav_inline_end"></div></nav></div><div class="clear clear_nav_end"></div></div>
+<div style="display:flex;justify-content:center;inline-block;text-align:center;margin-top:7%"><div><form id="gridea-search-form" data-update="1676870711644" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q"  placeholder="Search..." /></form></div><div style="margin-left:0.5em"><input id="switch_default_h" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+</div></div>
+<script>function enableDarkmode(){document.body.classList.add("darkmode"),document.getElementById("switch_default").checked=1,document.getElementById("switch_default_h").checked=1}function removeDarkmode(){document.body.classList.remove("darkmode"),document.getElementById("switch_default").checked=0,document.getElementById("switch_default_h").checked=0}function getCookie(a){var b,c=new RegExp("(^| )"+a+"=([^;]*)(;|$)");return(b=document.cookie.match(c))?unescape(b[2]):null}cookie=getCookie("darkmode"),"enable"==cookie&&enableDarkmode(),window.matchMedia("(prefers-color-scheme: dark)").matches&&"disable"!==cookie&&(enableDarkmode(),document.cookie="darkmode=enable; path=/");var mobileBtn=function(){1==document.getElementById("switch_default").checked?(enableDarkmode(),document.cookie="darkmode=enable; path=/"):(removeDarkmode(),document.cookie="darkmode=disable; path=/")};</script>
+
+<div class="main"><div class="main-inner"><div class="content">
+<article class="post">
+<h2 class="post_title sm_margin"><a>电视盒子CPU、GPU性能对比</a></h2>
+<script>function lan(){if(document.getElementById("lan").innerText=="繁"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_tw.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="简"}else{if(document.getElementById("lan").innerText=="簡"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_cn.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="繁"}}};</script>
+<section class="post_details"><i class="iconfont icon-calendar"></i><span style="margin-right:15px"> 2022-06-09</span><i class="iconfont icon-browse"></i><span style="margin-right:15px"> <span id="busuanzi_value_page_pv"></span> Views</span><i class="iconfont icon-category"></i><span class="weaklink" style="margin-right:15px">	<a href="https://xuconnery.github.io/tag/QqpcjB3xM/" class="tag">技术</a></span><i class="iconfont icon-caret-down"></i><span style="margin-right:15px">1458字</span><i class="iconfont icon-naozhong"></i><span style="margin-right:15px">6 min read</span><a id="lan" href="javascript:void(0);"onclick="lan();"title="调整简繁体" style="margin-right:15px;">繁</a>
+</section>
+
+<div style="display:flex">
+<div class="md_block" id="md_block">
+<div class="round-shape-one"></div>
+<p>如今智能电视、电视盒子 CPU 普遍采用 ARM 提供的芯片架构，我们可以根据处理器的芯片架构来判断处理器的性能。</p>
+<p>判断电视处理器芯片优劣的方法：</p>
+<p>ARM 芯片大体排序为：Cortex-A57 处理器、Cortex-A53 处理器、Cortex-A15 处理器、Cortex-A12 处理器、Cortex-A9 处理器、Cortex-A8 处理器、Cortex-A7 处理器、Cortex-A5 处理器，再往下为 ARM 系列，已无参考意义。</p>
+<hr>
+<p>本人用过不少芯片的盒子，有s905x,s912,全志H6,rk3328,rk3368,和老q5等电信盒子（s905，s905l,s905m)等，纯影音来说，最终把所有盒子全卖了，只剩一个s905X的盒子，，</p>
+<p>影音播放来说，s905x可以4K 60Hz解码输出，h265,支持HDR，可以完美支持coreelec，libreelec,等播放系统，也可完美刷emuelec游戏系统，<br>
+s912是升级版，比s905x只多了核心，coreelec解码下纯影音播放没什么不同，，游戏可能快一点，但emuelec下老游戏、常规游戏差不多的，，<br>
+全志等芯片更不用提了，librlelec都支持不完善，，有测试版支持但无法hdr,,不提，，</p>
+<p>目前s905x的1+8外贸盒子（足够了,coreelec 4k hdr流畅），在闲鱼约80元，，带光纤源码输出，，s912要200到350左右，所以我认为s905x性价比最高，，</p>
+<p>目前本人就是一个s905x的盒子（1+8），tf卡上装了coreelec,u盘装了emuelec游戏，，一般默认下，coreelec读取小米路由器上的移动硬盘(下载的4K电影），光纤源码到音响，，想玩游戏就拔tf卡，插u盘启动emuelec，，，想进安卓了，就拔掉tf卡和U盘，，系统直接进安卓，，又变回安卓盒子，，，，</p>
+<hr>
+<p>很多粉丝相比都听说或使用过斐讯n1，它有着更多的玩法，通过第三方固件可以实现诸多需求，它采用的就是amlogic s905d soc。所以我们先从s905d说起；</p>
+<p>s905隶属于S9 family系列，其衍生出的方案有s905d、s905l、s905x、s905w、s912，它们都属于同门师兄弟，架构上没有什么大的差异，发布时间为2016年，除s912相对高阶拥有更强大的解码规格和mali-t820 gpu加持外，其余几款都采用28nm四核a53规格，配以mali450规格，全系都支持4k60p 10bit h265硬解以及4k30p h264硬解，这个系列虽然s912可选杜比视界，但市面上我知道的没有一款具备。</p>
+<p>s905l是相对最弱的，也广泛用于iptv运营商机顶盒产品中，魔百盒大多采用了这个方案，而像天猫魔盒m17、小米盒子3s基本都是s905x，不过也都属于过时停产产品了，唯一大家接触的比价多的恐怕是采用s912的当贝盒子b1和斐讯t1、天猫魔盒m16s了。</p>
+<p>一代s9家族最大的问题是制程高，适配安卓系统版本较低，而且cpu主频基本锁定在了1.5ghz，性能有限，这个家族顶流当属s912拥有八核心。</p>
+<p>消费预警：虽然家族整体差异看似不大，但是有两个芯片是减配缩水的那就是s905w和s805x</p>
+<p>之后的两年，amlogic启动了s9家族的gen2迭代，只有三个方案，s905x2、s905y2和s922x，最大的升级主要是制程架构，全系采用12nm制程，s922x采用了四核a73和双核a53规格，gpu从mali 450提升到了g31以上（s922x是g52)，解码方面没什么变化，算是继承了1代的衣钵。好在杜比视界都可选（s922x-j默认杜比视界）。</p>
+<p>至于s922x我也在之前的一篇文章单独介绍过，大家可以看一下相应的产品。</p>
+<p>与当贝b3 pro同规格盒子还有哪些？</p>
+<p>这一代由于量产机器并不多，除了s922x，其余两款大多为电视棒类型，并不在中国销售，所以s922x成了现在amlogic可以拿得出手的最高阶芯片。其娱乐兔跑分约为13万左右，约为骁龙675的水平。</p>
+<p>这个阶段，晶晨还有一个变种体系，就是针对于智能物联终端的a311d芯片，比如当贝最新出的z1 pro，主要规格方面它和s922x是一致的，只是应用领域的差异。</p>
+<p>又过了一年，amlogic发布了s9家族三代，其中以s905x3为主，选择这个芯片的产品也很多，像小米4s pro、腾讯极光盒子3 pro、创维小湃3 pro、天猫魔盒以及众多外贸盒子，hk1box，x96max plus等等。改进方面增加了一个可选的npu，也就是俗称神经处理单元，具备1.2个TOPS算力。解码方面增加了8k30p h265硬解，还有cpu主频略有提升，在刷写openwrt后，cpumark和aes速度都比n1的s905d高出3倍以上。</p>
+<p>这个系列也是我主推的，之前的文章也有提及，属于性价比的首选，即价格上比s905d一代贵不到几十元，但支持的三方固件和实际效能表现也都不差。</p>
+<p>当然同时amlogic也启动了s9家族的四代，只是目前量产型号较少，感兴趣的可以看我的s905x4中文首测。以及我比较期待的s908x，具有8K 60fps AV1和AVS3解码，HDMI 2.1以及未知CPU和GPU的高端SoC。</p>
+<p>之所以先介绍晶晨，主要是因为集成方案的产品最多，支持的固件也最广泛，而且性能指标参数喜人，适配主流的安卓新版本，产品档次也覆盖了高中低，其中s905x3和s922x是我立荐的。还有一个小补充就是amlogic全系如果芯片后面加h的后缀，则表示经过杜比与dts的音频认证，比如s922x-h的gt king pro和gs king x。</p>
+<figure data-type="image" tabindex="1"><img src="https://xuconnery.github.io/post-images/1654769701099.jpg" alt="" loading="lazy"></figure>
+
+<span id="footnote"></span>
+<div id = "warn"></div>
+</div>
+<div class="toc-container"></div>
+</div>
+<div id="fullPage"><canvas id="canvas"></canvas></div>
+</article>
+<div id="eof"><span>EOF</span></div><div class="round-shape-one"></div>
+<section>
+<div class="doc_comments">
+
+</div></section>
+</div></div></div><script>
+"use strict";!function(){for(var n=document.getElementsByTagName("pre"),e=n.length,s=0;s<e;s++){n[s].innerHTML='<span class="line-number"></span>'+n[s].innerHTML+'<span class="cl"></span>';for(var a=n[s].innerHTML.split(/\n/).length,r=0;r<a-1;r++){n[s].getElementsByTagName("span")[0].innerHTML+="<span>"+(r+1)+"</span>"}}}();
+let mainNavLinks=document.querySelectorAll(".markdownIt-TOC a");window.addEventListener("scroll",event=>{let fromTop=window.scrollY;mainNavLinks.forEach((link,index)=>{let section=document.getElementById(decodeURI(link.hash).substring(1));let nextSection=null
+if(mainNavLinks[index+1]){nextSection=document.getElementById(decodeURI(mainNavLinks[index+1].hash).substring(1));}
+if(section.offsetTop<=fromTop){if(nextSection){if(nextSection.offsetTop>fromTop){link.classList.add("currentToc");}else{link.classList.remove("currentToc");}}else{link.classList.add("currentToc");}}else{link.classList.remove("currentToc");}});});
+var h=document.documentElement,b=document.body,st="scrollTop",sh="scrollHeight",progress=document.querySelector(".progress"),scroll;document.addEventListener("scroll",function(){scroll=(h[st]||b[st])/((h[sh]||b[sh])-h.clientHeight)*100;progress.style.setProperty("--scroll",scroll+"%")});
+var wxScale=new WxScale({fullPage:document.querySelector("#fullPage"),canvas:document.querySelector("#canvas")});var imgBox=document.querySelectorAll("#md_block img");for(var i=0;i<imgBox.length;i++){imgBox[i].onclick=function(e){wxScale.start(this)}};
+</script>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"></a><div class="footer animated fadeInDown"><div class="site_footer"><div class="mysocials"><div class="my_socials"></div></div><div class="copyright"id="copyright">Powered by Gridea © 2022吾日三省吾身 <a href="https://xuconnery.github.io" style="margin:0;">BossXu</a>.</div>
+<span style="display: inline;margin-right:15px;">👁<strong><span id="busuanzi_value_site_uv"></span></strong></span><span id="busuanzi_container_page_pv" style="display: inline;"><span>📚<strong>54</strong> posts</span></div></div>
+<script>
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<script type="text/javascript" async src="https://xuconnery.github.io/media/js/prism.js"></script>
+</body>
+</html>

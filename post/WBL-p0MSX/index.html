@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="https://xuconnery.github.io/favicon.ico" type="image/x-icon" /><meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="apple-mobile-web-app-capable"content="yes"/><meta name="apple-mobile-web-app-status-bar-style"content="black"/><meta name="format-detection"content="telephone=no"/><meta name="renderer"content="webkit"><meta name="description"content="吾日三省吾身"><meta charset="UTF-8"><title>搭建富强Naive并使用macOS的Qv2ray | BossXu</title>
+<link href="https://xuconnery.github.io/styles/main.css" type="text/css" rel="stylesheet" /><link href="https://at.alicdn.com/t/font_1621793_zatzzgvf30g.css" type="text/css" rel="stylesheet" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css"><script async src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.min.js"></script><script src="https://xuconnery.github.io/media/js/magnify.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
+<script type="text/javascript">function btn_toggle(){document.getElementById("hn").classList.contains("no-js")?document.getElementById("hn").classList.remove("no-js"):document.getElementById("hn").classList.add("no-js")}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EG9T3BG7R"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-9EG9T3BG7R');
+</script>
+
+<link rel="canonical" href="https://xuconnery.github.io/post/WBL-p0MSX/" />
+</head>
+<body>
+<div class="progress"></div><style>.progress{background:linear-gradient(to right,#87ceeb var(--scroll),transparent 0);background-repeat:no-repeat;position:fixed;width:100%;height:4px;z-index:1}</style><div class="darkmode-background"></div><div class="darkmode-layer"></div>
+<noscript><p class="warn" >本页面需要浏览器支持（启用）JavaScript</p></noscript><div class="header"><div class="logo_title"><div class="title animated fadeInDown"><a href="https://xuconnery.github.io"><img alt="logo" style="display:inline-block;" src="https://xuconnery.github.io/images/avatar.png"/></a><h1 title="BossXu" class="weaklink"><a  href="/">BossXu</a></h1>
+
+<div class="navbar weaklink">
+<div class="normal_nav">
+<div class="bitcron_nav_container"><div class="bitcron_nav"><div class="bitcron_nav"><div style="display:flex;justify-content:center;"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul></nav>
+<div style="float:right;margin-top:1em"><form id="gridea-search-form" data-update="1578893743252" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="Search..."></form></div><div style="margin-left:0.5em;margin-top:1.2em"><input id="switch_default" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+<div class="clear clear_nav_inline_end"></div></div></div><div class="clear clear_nav_end"></div></div></div><div class="hamberger" href="javascript:void(0)" onclick="btn_toggle();"><i class="iconfont icon-category"></i></div></div></div></div>
+<div id="hn" class="no-js hidden_nav animated fadeInDown"><div class="bitcron_nav_container"><div class="bitcron_nav"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul><div class="clear clear_nav_inline_end"></div></nav></div><div class="clear clear_nav_end"></div></div>
+<div style="display:flex;justify-content:center;inline-block;text-align:center;margin-top:7%"><div><form id="gridea-search-form" data-update="1676870711644" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q"  placeholder="Search..." /></form></div><div style="margin-left:0.5em"><input id="switch_default_h" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+</div></div>
+<script>function enableDarkmode(){document.body.classList.add("darkmode"),document.getElementById("switch_default").checked=1,document.getElementById("switch_default_h").checked=1}function removeDarkmode(){document.body.classList.remove("darkmode"),document.getElementById("switch_default").checked=0,document.getElementById("switch_default_h").checked=0}function getCookie(a){var b,c=new RegExp("(^| )"+a+"=([^;]*)(;|$)");return(b=document.cookie.match(c))?unescape(b[2]):null}cookie=getCookie("darkmode"),"enable"==cookie&&enableDarkmode(),window.matchMedia("(prefers-color-scheme: dark)").matches&&"disable"!==cookie&&(enableDarkmode(),document.cookie="darkmode=enable; path=/");var mobileBtn=function(){1==document.getElementById("switch_default").checked?(enableDarkmode(),document.cookie="darkmode=enable; path=/"):(removeDarkmode(),document.cookie="darkmode=disable; path=/")};</script>
+
+<div class="main"><div class="main-inner"><div class="content">
+<article class="post">
+<h2 class="post_title sm_margin"><a>搭建富强Naive并使用macOS的Qv2ray</a></h2>
+<script>function lan(){if(document.getElementById("lan").innerText=="繁"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_tw.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="简"}else{if(document.getElementById("lan").innerText=="簡"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_cn.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="繁"}}};</script>
+<section class="post_details"><i class="iconfont icon-calendar"></i><span style="margin-right:15px"> 2022-12-03</span><i class="iconfont icon-browse"></i><span style="margin-right:15px"> <span id="busuanzi_value_page_pv"></span> Views</span><i class="iconfont icon-category"></i><span class="weaklink" style="margin-right:15px">	<a href="https://xuconnery.github.io/tag/QqpcjB3xM/" class="tag">技术</a></span><i class="iconfont icon-caret-down"></i><span style="margin-right:15px">857字</span><i class="iconfont icon-naozhong"></i><span style="margin-right:15px">4 min read</span><a id="lan" href="javascript:void(0);"onclick="lan();"title="调整简繁体" style="margin-right:15px;">繁</a>
+</section>
+
+<div style="display:flex">
+<div class="md_block" id="md_block">
+<div class="round-shape-one"></div>
+<h3 id="富强naive搭建">富强Naive搭建：</h3>
+<p>系统环境：Oracle甲骨文云，x86，Ubuntu 22.04.1 LTS</p>
+<p>1、放行端口，包括服务面板和SSH里2个地方的端口，见https://xuconnery.github.io/post/r_Ea4zHWp/</p>
+<p>2、编译安装caddy和Naive</p>
+<pre><code class="language-shell">apt install golang-go
+</code></pre>
+<pre><code class="language-shell">go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
+</code></pre>
+<pre><code class="language-shell">~/go/bin/xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwardproxy@naive
+</code></pre>
+<p>如果第二条指令执行出错，可以尝试执行go env -w GO111MODULE=on 再重试，还不行的话请自行搜索升级go版本方法。</p>
+<p>倒数第2步是：</p>
+<pre><code class="language-shell">2022/12/03 05:37:29 [INFO] exec (timeout=0s): /usr/bin/go build -o /home/ubuntu/caddy -ldflags -w -s -trimpath 
+</code></pre>
+<p>这里要等几分钟，不要关闭SSH，然后就会显示：</p>
+<pre><code class="language-shell">2022/12/03 05:44:08 [INFO] Build complete: ./caddy
+</code></pre>
+<p>2、Caddyfile配置</p>
+<p>进入sftp，会看到编译好的caddy文件:</p>
+<figure data-type="image" tabindex="1"><img src="https://xuconnery.github.io/post-images/1670053344203.png" alt="" loading="lazy"></figure>
+<p>然后右键新建文件：Caddyfile ，注意大小写不要错，然后右键编辑：</p>
+<pre><code class="language-json">:443, naive.buliang0.tk #你的域名
+tls example@example.com #你的邮箱
+route {
+ forward_proxy {
+   basic_auth user pass #用户名和密码
+   hide_ip
+   hide_via
+   probe_resistance
+  }
+ #支持多用户
+ forward_proxy {
+   basic_auth user2 pass2 #用户名和密码
+   hide_ip
+   hide_via
+   probe_resistance
+  }
+ reverse_proxy  https://demo.cloudreve.org  { #伪装网址
+   header_up  Host  {upstream_hostport}
+   header_up  X-Forwarded-Host  {host}
+  }
+}
+</code></pre>
+<p>前台运行caddy，以便于看到证书申请的过程和报错</p>
+<pre><code class="language-shell">./caddy run
+</code></pre>
+<pre><code class="language-shell">2022/12/03 05:59:21.754 INFO    tls.obtain      certificate obtained successfully    {&quot;identifier&quot;: “dfxxxc.net&quot;}
+2022/12/03 05:59:21.754 INFO    tls.obtain      releasing lock  {&quot;identifier&quot;: &quot;2dxxxxxc.net&quot;}
+2022/12/03 05:59:44.033 ERROR   http.handlers.reverse_proxy     aborting with incomplete response    {&quot;error&quot;: &quot;write tcp 10.0.0.218:443-&gt;16xxxx.125.219:35334: write: connection reset by peer&quot;}
+</code></pre>
+<p>倒数第3行，会显示certificate obtained successfully，就表示证书OK了，最后报了个错，不用管。这个时候访问自己的域名，会跳转到反代的伪装网站。</p>
+<p>然后Ctrl+C退出ssh，此时连上的Naive会立刻断开，表示Naive服务也停了。</p>
+<p>重新连上ssh，然后用后台运行的命令，这样关闭ssh就不会关闭咯：</p>
+<p>后台运行caddy：</p>
+<pre><code class="language-shell">./caddy start
+</code></pre>
+<p>停止caddy：</p>
+<pre><code class="language-shell">./caddy stop
+</code></pre>
+<p>重载配置：</p>
+<pre><code class="language-shell">./caddy reload
+</code></pre>
+<p>到此，Naive的服务端就OK了。接下来是macOS下的客户端连接。</p>
+<h3 id="macos的qv2ray连接naive服务端">macOS的Qv2ray连接Naive服务端</h3>
+<p>1、安装so文件</p>
+<p>https://github.com/Qv2ray/QvPlugin-NaiveProxy ，点击“打开本地插件目录”，将so文件放进去，具体地址为/Library/Preferences/qv2ray/plugins</p>
+<p>2、安装Naive核心执行文件</p>
+<p>https://github.com/klzgrad/naiveproxy ，放到/Applications/qv2ray.app/Contents/MacOSnaiveproxy/文件夹去，</p>
+<figure data-type="image" tabindex="2"><img src="https://xuconnery.github.io/post-images/1670054372776.jpg" alt="" loading="lazy"></figure>
+<p>注意，路径里，要加上naive这个核心执行文件，不然“Test Run”会不成功。</p>
+<figure data-type="image" tabindex="3"><img src="https://xuconnery.github.io/post-images/1670054738920.jpg" alt="" loading="lazy"></figure>
+<p>问：是否需要更新服务器端版本？<br>
+答：naiveproxy对服务端一般没有更新要求，如果对caddy其他功能有要求可以自行评估更新</p>
+<h3 id="服务端性能优化">服务端性能优化</h3>
+<p>经过搭建后，发现同样VM.Standard.E2.1.Micro（虚拟机, 1 core OCPU, 1 GB memory, 0.48 Gbps network bandwidth），而且ping值还要小的机器，速度比EasyTrojan搭建的，要慢很多。</p>
+<p>EasyTrojan搭建的，搭建完就能轻松跑到20w，但是Naive跑到3w都很勉强。</p>
+<p>经过如下调校后，速度可以达到15w。</p>
+<p>使用 BBR 拥塞控制</p>
+<pre><code class="language-shell">bash -c 'echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf'
+bash -c 'echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf'
+sysctl -p
+</code></pre>
+<p>关闭 tcp_slow_start_after_idle</p>
+<pre><code class="language-shell">sudo sysctl -w net.ipv4.tcp_slow_start_after_idle=0
+</code></pre>
+<p>（仅限服务器）考虑设置 tcp_notsent_lowat</p>
+<pre><code class="language-shell">sudo sysctl -w net.ipv4.tcp_notsent_lowat=16384
+</code></pre>
+<p>参考：<br>
+https://bulianglin.com/archives/naive.html<br>
+https://www.youtube.com/watch?v=F2VsjS6fybs<br>
+https://asiavp.net/guide/mac-os/naiveproxy/<br>
+https://github.com/klzgrad/naiveproxy/wiki/Performance-Tuning<br>
+https://www.scwcd.cn/archives/37.html</p>
+
+<span id="footnote"></span>
+<div id = "warn"></div>
+</div>
+<div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%AF%8C%E5%BC%BAnaive%E6%90%AD%E5%BB%BA">富强Naive搭建：</a></li>
+<li><a href="#macos%E7%9A%84qv2ray%E8%BF%9E%E6%8E%A5naive%E6%9C%8D%E5%8A%A1%E7%AB%AF">macOS的Qv2ray连接Naive服务端</a></li>
+<li><a href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96">服务端性能优化</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="fullPage"><canvas id="canvas"></canvas></div>
+</article>
+<div id="eof"><span>EOF</span></div><div class="round-shape-one"></div>
+<section>
+<div class="doc_comments">
+
+</div></section>
+</div></div></div><script>
+"use strict";!function(){for(var n=document.getElementsByTagName("pre"),e=n.length,s=0;s<e;s++){n[s].innerHTML='<span class="line-number"></span>'+n[s].innerHTML+'<span class="cl"></span>';for(var a=n[s].innerHTML.split(/\n/).length,r=0;r<a-1;r++){n[s].getElementsByTagName("span")[0].innerHTML+="<span>"+(r+1)+"</span>"}}}();
+let mainNavLinks=document.querySelectorAll(".markdownIt-TOC a");window.addEventListener("scroll",event=>{let fromTop=window.scrollY;mainNavLinks.forEach((link,index)=>{let section=document.getElementById(decodeURI(link.hash).substring(1));let nextSection=null
+if(mainNavLinks[index+1]){nextSection=document.getElementById(decodeURI(mainNavLinks[index+1].hash).substring(1));}
+if(section.offsetTop<=fromTop){if(nextSection){if(nextSection.offsetTop>fromTop){link.classList.add("currentToc");}else{link.classList.remove("currentToc");}}else{link.classList.add("currentToc");}}else{link.classList.remove("currentToc");}});});
+var h=document.documentElement,b=document.body,st="scrollTop",sh="scrollHeight",progress=document.querySelector(".progress"),scroll;document.addEventListener("scroll",function(){scroll=(h[st]||b[st])/((h[sh]||b[sh])-h.clientHeight)*100;progress.style.setProperty("--scroll",scroll+"%")});
+var wxScale=new WxScale({fullPage:document.querySelector("#fullPage"),canvas:document.querySelector("#canvas")});var imgBox=document.querySelectorAll("#md_block img");for(var i=0;i<imgBox.length;i++){imgBox[i].onclick=function(e){wxScale.start(this)}};
+</script>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"></a><div class="footer animated fadeInDown"><div class="site_footer"><div class="mysocials"><div class="my_socials"></div></div><div class="copyright"id="copyright">Powered by Gridea © 2022吾日三省吾身 <a href="https://xuconnery.github.io" style="margin:0;">BossXu</a>.</div>
+<span style="display: inline;margin-right:15px;">👁<strong><span id="busuanzi_value_site_uv"></span></strong></span><span id="busuanzi_container_page_pv" style="display: inline;"><span>📚<strong>54</strong> posts</span></div></div>
+<script>
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<script type="text/javascript" async src="https://xuconnery.github.io/media/js/prism.js"></script>
+</body>
+</html>
